@@ -7,7 +7,16 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        white: "#F7F7F7",
+        black: "#000000",
+        "bg-dark": "#0C0C0C",
+        "bg-light": "#F7F7F7",
+        "line-dark": "#535353",
+        "line-light": "#ADADAD",
+      },
+    },
   },
   plugins: [],
   darkMode: "class",
