@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
+import Header from "@/components/Header";
 import "./globals.css";
 
 import { Kranky } from "next/font/google";
@@ -19,7 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${kranky.className}`}>
-        <ThemeProvider attribute="class">{children}</ThemeProvider>
+        <ThemeProvider attribute="class">
+          <Header />
+          <div className="h-[1px] w-full bg-line-light dark:bg-line-dark"></div>
+          <div className="mx-[22px] min-h-screen border-x border-line-light dark:border-line-dark">
+            {children}
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
