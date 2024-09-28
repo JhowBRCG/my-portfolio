@@ -3,5 +3,15 @@
 @tailwind utilities;
 
 body {
-  @apply bg-bg-light dark:bg-bg-dark min-h-screen antialiased;
+  @apply min-h-screen bg-bg-light antialiased dark:bg-bg-dark;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  @apply text-black dark:text-white;
 }
