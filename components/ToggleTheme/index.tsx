@@ -3,8 +3,11 @@
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
+import { cn } from "@/lib/utils";
 
-export default function ToggleTheme() {
+type ToggleThemeProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
+
+export default function ToggleTheme({ className }: ToggleThemeProps) {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
@@ -15,7 +18,10 @@ export default function ToggleTheme() {
   if (!mounted) return null;
 
   return (
-    <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+    <button
+      className={cn(className)}
+      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+    >
       <Image
         src={`/images/switch-${theme === "light" ? "dark" : "light"}.svg`}
         width={"30"}
