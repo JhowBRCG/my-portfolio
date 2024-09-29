@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply min-h-screen bg-bg-light antialiased dark:bg-bg-dark;
+  @apply min-h-screen overflow-x-hidden bg-bg-light antialiased dark:bg-bg-dark;
 }
 
 h1,
