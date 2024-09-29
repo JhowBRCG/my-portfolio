@@ -21,10 +21,12 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${kranky.className}`}>
         <ThemeProvider attribute="class">
-          <Header />
-          <div className="h-[1px] w-full bg-line-light dark:bg-line-dark"></div>
-          <div className="mx-[22px] min-h-screen border-x border-line-light dark:border-line-dark">
-            {children}
+          <div className="mx-auto max-w-[90%] 2xl:max-w-[1280px]">
+            <Header />
+            <div className="absolute left-0 mx-auto h-[1px] w-screen bg-line-light dark:bg-line-dark"></div>
+            <div className="min-h-screen border-x border-line-light dark:border-line-dark">
+              {children}
+            </div>
           </div>
         </ThemeProvider>
       </body>
