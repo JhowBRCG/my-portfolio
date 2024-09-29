@@ -1,4 +1,3 @@
-import { menuLinks } from "@/data/menuLinks";
 import { cn } from "@/lib/utils";
 import { FaRegWindowClose } from "react-icons/fa";
 
@@ -20,13 +19,15 @@ export default function MobileMenu({ closeMenu, menu }: MobileMenuProps) {
         </button>
       </div>
       <ul className="mt-28 flex flex-col items-center">
-        {menuLinks.map((item, i) => {
-          return (
-            <li className="text-[24px]" key={i}>
-              {item.name}
-            </li>
-          );
-        })}
+        <li className="w-full border-b border-t border-line-light py-[14px] text-center text-[24px] dark:border-line-dark">
+          <a href="">Contact</a>
+        </li>
+        <li className="w-full border-b border-line-light py-[14px] text-center text-[24px] dark:border-line-dark">
+          <a href="">GitHub</a>
+        </li>
+        <li className="w-full border-b border-line-light py-[14px] text-center text-[24px] dark:border-line-dark">
+          <a href="">CV</a>
+        </li>
       </ul>
     </div>
   );
