@@ -15,7 +15,7 @@ export default function Header() {
     <header className="relative border-x border-line-light px-[10px] py-[16px] dark:border-line-dark 2xl:pl-[40px]">
       <div className="flex items-center justify-between">
         <h2 className="text-xl 2xl:text-3xl">Welcome</h2>
-        <ToggleTheme className="absolute right-28 top-0 md:right-80" />
+        <ToggleTheme className="absolute right-28 top-0 md:right-80 2xl:right-96" />
         <ul className="hidden md:flex">
           <li className="relative px-[20px] text-lg 2xl:text-2xl">
             <a href="">Contact</a>
