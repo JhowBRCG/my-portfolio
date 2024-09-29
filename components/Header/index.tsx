@@ -12,7 +12,7 @@ export default function Header() {
   const closeMenu = () => setMenu(false);
 
   return (
-    <header className="relative mx-[22px] border-x border-line-light px-[10px] py-[16px] dark:border-line-dark">
+    <header className="relative border-x border-line-light px-[10px] py-[16px] dark:border-line-dark">
       <div className="flex items-center justify-between">
         <h2 className="text-xl">Welcome</h2>
         <ToggleTheme className="absolute right-28 top-0 md:right-80" />
