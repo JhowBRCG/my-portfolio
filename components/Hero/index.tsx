@@ -1,3 +1,9 @@
+import SquaresAnimation from "../SquaresAnimation";
+
 export default function Hero() {
-  return <div>Hero</div>;
+  return (
+    <section className="px-[13px] py-[29px]">
+      <SquaresAnimation className="h-[24px] w-[26px]" />
+    </section>
+  );
 }
