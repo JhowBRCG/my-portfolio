@@ -2,17 +2,23 @@ import { cn } from "@/lib/utils";
 
 type SquaresAnimationProps = {
   className: string;
+  squares: number;
 };
 
-export default function SquaresAnimation({ className }: SquaresAnimationProps) {
-  const squares = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-  const delayIncrease = 100;
+const delayIncrease = 100;
+
+export default function SquaresAnimation({
+  className,
+  squares,
+}: SquaresAnimationProps) {
+  const squaresArr = [""];
+  for (let index = 0; index < squares - 1; index++) squaresArr.push("");
 
   return (
     <div className="flex gap-[5px]">
-      {squares.map((e: number, i: number) => (
+      {squaresArr.map((e: string, i: number) => (
         <div
-          key={e}
+          key={i}
           className={cn(
             `animate-fade-down border border-black bg-transparent dark:border-white`,
             className,
