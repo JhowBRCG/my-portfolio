@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils/cn";
+import { createIndexByInput } from "@/lib/utils/createIndexByInput";
 
 type SquaresAnimationProps = {
   className: string;
@@ -12,7 +13,7 @@ export default function SquaresAnimation({
   squares,
 }: SquaresAnimationProps) {
   const squaresArr = [""];
-  for (let index = 0; index < squares - 1; index++) squaresArr.push("");
+  createIndexByInput(squares, squaresArr);
 
   return (
     <div className="flex gap-[5px]">
