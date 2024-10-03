@@ -8,7 +8,7 @@ type MobileMenuProps = {
 
 export default function MobileMenu({ closeMenu, menu }: MobileMenuProps) {
   const menuClass =
-    "absolute left-0 top-0 min-h-screen w-full bg-bg-light py-[16px] transition-all dark:bg-bg-dark";
+    "absolute left-0 top-0 min-h-screen w-full bg-bg-light py-[16px] transition-all dark:bg-bg-dark z-10";
   const menuTransition = { "-translate-y-[999px]": !menu };
 
   return (
