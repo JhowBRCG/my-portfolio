@@ -21,7 +21,7 @@ export default function SquaresAnimation({
         <div
           key={i}
           className={cn(
-            `animate-fade-down border border-black bg-transparent dark:border-white`,
+            `border border-black bg-transparent dark:border-white`,
             className,
           )}
           style={{ animationDelay: `${i * delayIncrease}ms` }}
