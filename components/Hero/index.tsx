@@ -2,14 +2,14 @@ import SquaresAnimation from "../SquaresAnimation";
 
 export default function Hero() {
   return (
-    <section className="relative px-[13px]">
-      <div className="absolute top-[29px]">
+    <section className="relative flex min-h-[calc(100svh-62px)] flex-col items-center justify-between px-[13px] py-[29px]">
+      <div className="w-full">
         <SquaresAnimation
           className="h-[24px] w-[26px] animate-fade-down"
           squares={10}
         />
       </div>
-      <div className="flex min-h-[calc(100svh-62px)] flex-col items-center justify-center text-center">
+      <div className="flex flex-col items-center justify-center text-center">
         <div className="flex flex-col gap-[8px]">
           <h1 className="animate-fade-left text-[20px] delay-100">
             FrontEnd Developer
@@ -33,7 +33,7 @@ export default function Hero() {
           CONTACT-ME
         </a>
       </div>
-      <div className="absolute bottom-[29px]">
+      <div className="w-full">
         <SquaresAnimation
           className="h-[24px] w-[26px] animate-fade-up"
           squares={10}
