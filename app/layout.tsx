@@ -23,7 +23,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class">
           <div className="mx-auto max-w-[90%] 2xl:max-w-[1280px]">
             <Header />
-            <div className="absolute left-0 mx-auto h-[1px] w-screen bg-line-light dark:bg-line-dark"></div>
+            <div className="absolute left-0 mx-auto h-[1px] w-screen bg-line-light dark:bg-line-dark" />
             <div className="min-h-screen border-x border-line-light dark:border-line-dark">
               {children}
             </div>
