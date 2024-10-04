@@ -19,12 +19,12 @@ export default function Header() {
         <ul className="hidden md:flex">
           <li className="relative px-[20px] text-lg 2xl:text-2xl">
             <a href="">Contact</a>
-            <span className="absolute -top-[16px] right-0 h-[60px] w-[1px] bg-line-light dark:bg-line-dark 2xl:h-[67px]"></span>
-            <span className="absolute -top-[16px] left-0 h-[60px] w-[1px] bg-line-light dark:bg-line-dark 2xl:h-[67px]"></span>
+            <span className="absolute -top-[16px] right-0 h-[60px] w-[1px] bg-line-light dark:bg-line-dark 2xl:h-[67px]" />
+            <span className="absolute -top-[16px] left-0 h-[60px] w-[1px] bg-line-light dark:bg-line-dark 2xl:h-[67px]" />
           </li>
           <li className="relative px-[20px] text-lg 2xl:text-2xl">
             <a href="">GitHub</a>
-            <span className="absolute -top-[16px] right-0 h-[60px] w-[1px] bg-line-light dark:bg-line-dark 2xl:h-[67px]"></span>
+            <span className="absolute -top-[16px] right-0 h-[60px] w-[1px] bg-line-light dark:bg-line-dark 2xl:h-[67px]" />
           </li>
           <li className="px-[20px] text-lg 2xl:text-2xl">
             <a href="">CV</a>
