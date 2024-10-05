@@ -1,13 +1,36 @@
+"use client";
+
 import SquaresAnimation from "../SquaresAnimation";
+import { useEffect, useState } from "react";
+import { useMediaQuery } from "react-responsive";
+import { getSquareNumByScreenSize } from "@/lib/utils/getSquareNumByScreenSize.ts";
 
 export default function Hero() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => setIsMounted(true), []);
+
+  const isDesktop = useMediaQuery({ query: "(min-width: 1280px)" });
+  const isLaptop = useMediaQuery({ query: "(min-width: 1024px)" });
+  const isTablet = useMediaQuery({ query: "(min-width: 768px)" });
+  const isMobileL = useMediaQuery({ query: "(min-width: 425px)" });
+
+  const numSquares = getSquareNumByScreenSize(
+    isDesktop,
+    isLaptop,
+    isTablet,
+    isMobileL,
+  );
+
   return (
     <section className="relative flex min-h-[calc(100svh-62px)] flex-col items-center justify-between px-[13px] py-[29px]">
       <div className="w-full">
-        <SquaresAnimation
-          className="h-[24px] w-[26px] animate-fade-down"
-          squares={10}
-        />
+        {isMounted && (
+          <SquaresAnimation
+            className="h-[24px] w-[26px] animate-fade-down"
+            squares={numSquares}
+          />
+        )}
       </div>
       <div className="flex flex-col items-center justify-center text-center">
         <div className="flex flex-col gap-[8px]">
@@ -34,10 +57,12 @@ export default function Hero() {
         </a>
       </div>
       <div className="w-full">
-        <SquaresAnimation
-          className="h-[24px] w-[26px] animate-fade-up"
-          squares={10}
-        />
+        {isMounted && (
+          <SquaresAnimation
+            className="h-[24px] w-[26px] animate-fade-down"
+            squares={numSquares}
+          />
+        )}
       </div>
     </section>
   );
