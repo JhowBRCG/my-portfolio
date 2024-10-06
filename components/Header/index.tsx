@@ -12,21 +12,21 @@ export default function Header() {
   const closeMenu = () => setMenu(false);
 
   return (
-    <header className="relative border-x border-line-light px-[10px] py-[16px] dark:border-line-dark 2xl:pl-[40px]">
+    <header className="2xl:pl-[40px] relative border-x border-line-light px-[10px] py-[16px] dark:border-line-dark">
       <div className="flex items-center justify-between">
-        <h2 className="text-xl 2xl:text-3xl">Welcome</h2>
-        <ToggleTheme className="absolute right-28 top-0 md:right-80 2xl:right-96" />
-        <ul className="hidden md:flex">
-          <li className="relative px-[20px] text-lg 2xl:text-2xl">
+        <h2 className="2xl:text-3xl text-xl">Welcome</h2>
+        <ToggleTheme className="md:right-80 2xl:right-96 absolute right-28 top-0" />
+        <ul className="md:flex hidden">
+          <li className="2xl:text-2xl relative px-[20px] text-lg">
             <a href="">Contact</a>
-            <span className="absolute -top-[16px] right-0 h-[60px] w-[1px] bg-line-light dark:bg-line-dark 2xl:h-[67px]" />
-            <span className="absolute -top-[16px] left-0 h-[60px] w-[1px] bg-line-light dark:bg-line-dark 2xl:h-[67px]" />
+            <span className="2xl:h-[67px] absolute -top-[16px] right-0 h-[60px] w-[1px] bg-line-light dark:bg-line-dark" />
+            <span className="2xl:h-[67px] absolute -top-[16px] left-0 h-[60px] w-[1px] bg-line-light dark:bg-line-dark" />
           </li>
-          <li className="relative px-[20px] text-lg 2xl:text-2xl">
+          <li className="2xl:text-2xl relative px-[20px] text-lg">
             <a href="">GitHub</a>
-            <span className="absolute -top-[16px] right-0 h-[60px] w-[1px] bg-line-light dark:bg-line-dark 2xl:h-[67px]" />
+            <span className="2xl:h-[67px] absolute -top-[16px] right-0 h-[60px] w-[1px] bg-line-light dark:bg-line-dark" />
           </li>
-          <li className="px-[20px] text-lg 2xl:text-2xl">
+          <li className="2xl:text-2xl px-[20px] text-lg">
             <a href="">CV</a>
           </li>
         </ul>
