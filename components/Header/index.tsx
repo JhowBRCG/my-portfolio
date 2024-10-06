@@ -3,13 +3,10 @@
 import ToggleTheme from "../ToggleTheme";
 import MobileMenu from "../MobileMenu";
 import { CiMenuFries } from "react-icons/ci";
-import { useState } from "react";
+import { useMenu } from "@/lib/hooks/useMenu";
 
 export default function Header() {
-  const [menu, setMenu] = useState(false);
-
-  const openMenu = () => setMenu(true);
-  const closeMenu = () => setMenu(false);
+  const { menu, closeMenu, openMenu } = useMenu();
 
   return (
     <header className="2xl:pl-[40px] relative border-x border-line-light px-[10px] py-[16px] dark:border-line-dark">
