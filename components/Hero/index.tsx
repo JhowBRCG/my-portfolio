@@ -3,7 +3,7 @@
 import SquaresAnimation from "../SquaresAnimation";
 import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
-import { getSquareNumByScreenSize } from "@/lib/utils/getSquareNumByScreenSize.ts";
+import { getSquareNumByScreenSize } from "@/lib/utils/getSquareNumByScreenSize";
 
 export default function Hero() {
   const [isMounted, setIsMounted] = useState(false);

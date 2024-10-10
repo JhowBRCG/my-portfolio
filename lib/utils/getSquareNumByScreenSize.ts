@@ -6,7 +6,7 @@ export function getSquareNumByScreenSize(
 ) {
   if (isDesktop) return 30;
   if (isLaptop) return 20;
-  if (isTablet) return 15;
+  if (isTablet) return 22;
   if (isMobileL) return 11;
   return 10;
 }
