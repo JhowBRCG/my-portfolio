@@ -27,7 +27,7 @@ export default function Hero() {
       <div className="w-full">
         {isMounted && (
           <SquaresAnimation
-            className="h-[24px] w-[26px] animate-fade-down"
+            className="h-[24px] w-[26px] animate-fade-down lg:h-[46px] lg:w-[50px]"
             squares={numSquares}
           />
         )}
@@ -59,7 +59,7 @@ export default function Hero() {
       <div className="w-full">
         {isMounted && (
           <SquaresAnimation
-            className="h-[24px] w-[26px] animate-fade-down"
+            className="h-[24px] w-[26px] animate-fade-down lg:h-[46px] lg:w-[50px]"
             squares={numSquares}
           />
         )}
