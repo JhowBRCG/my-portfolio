@@ -23,7 +23,7 @@ export default function Hero() {
   );
 
   return (
-    <section className="relative flex min-h-[calc(100svh-62px)] flex-col items-center justify-between px-[13px] py-[29px]">
+    <section className="relative flex min-h-[calc(100svh-62px)] flex-col items-center justify-between px-[13px] py-[29px] lg:px-[25px]">
       <div className="w-full">
         {isMounted && (
           <SquaresAnimation
