@@ -16,7 +16,7 @@ export default function SquaresAnimation({
   createIndexByInput(squares, squaresArr);
 
   return (
-    <div className="flex justify-center gap-[5px]">
+    <div className="flex justify-center gap-[5px] lg:gap-[16px]">
       {squaresArr.map((e: string, i: number) => (
         <div
           key={i}
