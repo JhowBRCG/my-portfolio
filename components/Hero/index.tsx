@@ -34,10 +34,10 @@ export default function Hero() {
       </div>
       <div className="flex flex-col items-center justify-center text-center">
         <div className="flex flex-col gap-[8px]">
-          <h1 className="animate-fade-left text-[20px] delay-100 md:text-2xl">
+          <h1 className="animate-fade-left text-[20px] delay-100 md:text-2xl xl:text-[32px]">
             FrontEnd Developer
           </h1>
-          <h2 className="animate-fade-right text-[24px] delay-200 md:text-3xl">
+          <h2 className="animate-fade-right text-[24px] delay-200 md:text-3xl xl:text-[36px]">
             HELLO, I&apos;M JHONATHAN
           </h2>
         </div>
@@ -51,7 +51,7 @@ export default function Hero() {
         </div>
         <a
           href="#"
-          className="mt-[73px] animate-jump-in border-[0.5px] border-black px-[29px] py-[11px] text-[14px] animate-delay-1000 dark:border-white md:text-[18px]"
+          className="mt-[73px] animate-jump-in border-[0.5px] border-black px-[29px] py-[11px] text-[14px] animate-delay-1000 dark:border-white md:text-[18px] xl:text-[20px]"
         >
           CONTACT-ME
         </a>
