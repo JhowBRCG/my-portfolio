@@ -18,7 +18,7 @@ export default function Skills() {
         {skillIcons.map((icon, i) => (
           <li
             key={i}
-            className="flex flex-[0_0_50px] justify-center px-[9px] py-[18px] text-[38px] first:border-l first:dark:border-line-dark"
+            className="flex flex-[0_0_50px] justify-center px-[9px] py-[18px] text-[38px] first:border-l first:dark:border-line-dark md:flex-[0_0_80px] lg:flex-[0_0_120px] xl:flex-[0_0_150px]"
           >
             {icon.icon}
           </li>
