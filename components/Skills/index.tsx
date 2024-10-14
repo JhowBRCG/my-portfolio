@@ -1,14 +1,24 @@
 "use client";
 
 import useEmblaCarousel from "embla-carousel-react";
+import AutoScroll from "embla-carousel-auto-scroll";
 import { skillIcons } from "@/data/skillIcons";
 
 export default function Skills() {
-  const [emblaRef] = useEmblaCarousel({
-    dragFree: true,
-    loop: true,
-    align: "start",
-  });
+  const [emblaRef] = useEmblaCarousel(
+    {
+      dragFree: true,
+      loop: true,
+      align: "start",
+    },
+    [
+      AutoScroll({
+        speed: 1,
+        stopOnInteraction: false,
+        startDelay: 0,
+      }),
+    ],
+  );
   return (
     <section
       className="overflow-hidden border-y border-line-light dark:border-line-dark"
