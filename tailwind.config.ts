@@ -17,6 +17,10 @@ const config: Config = {
         "line-dark": "#535353",
         "line-light": "#ADADAD",
       },
+      backgroundImage: {
+        "about-mobile-dark": "url('/images/bg-about-mobile-dark.svg')",
+        "about-mobile-light": "url('/images/bg-about-mobile-light.svg')",
+      },
     },
   },
   plugins: [tailwindcssAnimated],
