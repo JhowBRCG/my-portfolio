@@ -1,19 +1,19 @@
 "use client";
 
 import SquaresAnimation from "../SquaresAnimation";
-import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { getSquareNumByScreenSize } from "@/lib/utils/getSquareNumByScreenSize";
+import { useIsMounted } from "@/lib/hooks/useIsMounted";
 
 export default function Hero() {
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => setIsMounted(true), []);
-
   const isDesktop = useMediaQuery({ query: "(min-width: 1280px)" });
   const isLaptop = useMediaQuery({ query: "(min-width: 1024px)" });
   const isTablet = useMediaQuery({ query: "(min-width: 768px)" });
   const isMobileL = useMediaQuery({ query: "(min-width: 425px)" });
+
+  const isMounted = useIsMounted();
+
+  if (!isMounted) return null;
 
   const numSquares = getSquareNumByScreenSize(
     isDesktop,
@@ -25,12 +25,10 @@ export default function Hero() {
   return (
     <section className="relative flex min-h-[calc(100svh-62px)] flex-col items-center justify-between px-[13px] py-[29px] lg:px-[25px]">
       <div className="w-full">
-        {isMounted && (
-          <SquaresAnimation
-            className="h-[24px] w-[26px] animate-fade-down lg:h-[46px] lg:w-[50px]"
-            squares={numSquares}
-          />
-        )}
+        <SquaresAnimation
+          className="h-[24px] w-[26px] animate-fade-down lg:h-[46px] lg:w-[50px]"
+          squares={numSquares}
+        />
       </div>
       <div className="flex flex-col items-center justify-center text-center">
         <div className="flex flex-col gap-[8px]">
@@ -57,12 +55,10 @@ export default function Hero() {
         </a>
       </div>
       <div className="w-full">
-        {isMounted && (
-          <SquaresAnimation
-            className="h-[24px] w-[26px] animate-fade-down lg:h-[46px] lg:w-[50px]"
-            squares={numSquares}
-          />
-        )}
+        <SquaresAnimation
+          className="h-[24px] w-[26px] animate-fade-down lg:h-[46px] lg:w-[50px]"
+          squares={numSquares}
+        />
       </div>
     </section>
   );
