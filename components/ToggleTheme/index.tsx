@@ -2,20 +2,16 @@
 
 import Image from "next/image";
 import { useTheme } from "next-themes";
-import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils/cn";
+import { useIsMounted } from "@/lib/hooks/useIsMounted";
 
 type ToggleThemeProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 export default function ToggleTheme({ className }: ToggleThemeProps) {
-  const [mounted, setMounted] = useState(false);
+  const isMounted = useIsMounted();
   const { theme, setTheme } = useTheme();
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null;
+  if (!isMounted) return null;
 
   return (
     <button
