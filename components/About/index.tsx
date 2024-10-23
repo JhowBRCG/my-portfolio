@@ -15,10 +15,10 @@ export default function About() {
           <p className="col-span-2 text-center text-[24px] animate-delay-[100ms] intersect:animate-fade-up">
             JHONATHAN
           </p>
-          <p className="col-span-2 text-right text-[24px] animate-delay-[200ms] intersect:animate-fade-up">
+          <p className="col-span-2 text-right text-[24px] animate-delay-[200ms] intersect:animate-fade-up md:col-auto md:text-center">
             FrontEnd
           </p>
-          <p className="col-span-2 text-left text-[24px] animate-delay-[300ms] intersect:animate-fade-up">
+          <p className="col-span-2 text-left text-[24px] animate-delay-[300ms] intersect:animate-fade-up md:col-auto md:text-center">
             brazilian
           </p>
           <p className="col-span-2 text-right text-[24px] animate-delay-[400ms] intersect:animate-fade-up">
