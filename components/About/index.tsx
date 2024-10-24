@@ -10,7 +10,7 @@ export default function About() {
   return (
     <section className="mx-[22px] mt-[51px]">
       <SubTitle text="Know me a litte bit" textCenter={false} />
-      <div className="mt-[25px] min-h-[624px] w-full border border-line-light bg-about-mobile-light bg-contain bg-bottom bg-no-repeat dark:border-line-dark dark:bg-about-mobile-dark md:bg-[center_bottom_-100px] lg:bg-[center_bottom_-170px]">
+      <div className="xl:bg-about-desktop-light dark:xl:bg-about-desktop-dark mt-[25px] min-h-[624px] w-full border border-line-light bg-about-mobile-light bg-contain bg-bottom bg-no-repeat dark:border-line-dark dark:bg-about-mobile-dark md:bg-[center_bottom_-100px] lg:bg-[center_bottom_-170px] xl:bg-left">
         <div className="grid grid-cols-2 gap-y-5 px-[16px] py-[50px] md:px-[100px]">
           <p className="col-span-2 text-center text-[24px] animate-delay-[100ms] intersect:animate-fade-up">
             JHONATHAN
