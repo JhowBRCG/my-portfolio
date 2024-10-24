@@ -21,6 +21,8 @@ const config: Config = {
       backgroundImage: {
         "about-mobile-dark": "url('/images/bg-about-mobile-dark.svg')",
         "about-mobile-light": "url('/images/bg-about-mobile-light.svg')",
+        "about-desktop-dark": "url('/images/bg-about-desktop-dark.svg')",
+        "about-desktop-light": "url('/images/bg-about-desktop-light.svg')",
       },
     },
   },
