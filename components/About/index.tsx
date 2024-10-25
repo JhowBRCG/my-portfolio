@@ -15,19 +15,19 @@ export default function About() {
           <p className="col-span-2 text-center text-[24px] animate-delay-[100ms] intersect:animate-fade-up xl:col-span-3 xl:text-[36px]">
             JHONATHAN
           </p>
-          <p className="col-span-2 text-right text-[24px] animate-delay-[200ms] intersect:animate-fade-up md:col-auto md:text-center xl:col-auto xl:text-[36px]">
+          <p className="col-span-2 text-right text-[24px] animate-delay-[200ms] intersect:animate-fade-up md:col-auto md:text-center xl:col-auto xl:text-left xl:text-[36px]">
             FrontEnd
           </p>
           <p className="col-span-2 text-[24px] animate-delay-[300ms] intersect:animate-fade-up md:col-auto md:text-center xl:text-[36px]">
             brazilian
           </p>
-          <p className="col-span-2 text-right text-[24px] animate-delay-[400ms] intersect:animate-fade-up xl:col-auto xl:text-center xl:text-[36px]">
+          <p className="col-span-2 text-right text-[24px] animate-delay-[400ms] intersect:animate-fade-up xl:col-auto xl:text-right xl:text-[36px]">
             English
           </p>
           <p className="col-span-2 text-left text-[24px] animate-delay-[500ms] intersect:animate-fade-up xl:col-auto xl:text-center xl:text-[36px]">
             dark mode
           </p>
-          <p className="col-span-2 text-center text-[24px] animate-delay-[600ms] intersect:animate-fade-up xl:col-span-2 xl:text-center xl:text-[36px]">
+          <p className="col-span-2 text-center text-[24px] animate-delay-[600ms] intersect:animate-fade-up xl:col-span-2 xl:text-right xl:text-[36px]">
             web applications
           </p>
           <p className="text-left text-[24px] animate-delay-[700ms] intersect:animate-fade-up xl:text-left xl:text-[36px]">
