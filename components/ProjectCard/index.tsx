@@ -16,7 +16,7 @@ export default function ProjectCard({ img, name }: ProjectCardProps) {
         height={999}
         priority
       />
-      <p className="mt-[9px]">{name}</p>
+      <p className="mt-[9px] xl:text-[20px]">{name}</p>
     </article>
   );
 }
