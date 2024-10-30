@@ -7,9 +7,9 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ img, name }: ProjectCardProps) {
   return (
-    <article className="max-w-[291px] border border-line-light p-[10px] dark:border-line-dark">
+    <article className="w-full border border-line-light p-[10px] dark:border-line-dark">
       <Image
-        className="h-[161px] w-full"
+        className="h-[161px] w-full object-cover object-top"
         src={img}
         alt={name}
         width={255}
