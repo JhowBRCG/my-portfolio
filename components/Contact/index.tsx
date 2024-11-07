@@ -16,7 +16,7 @@ export default function Contact() {
             </a>
           </li>
           <li className="w-full px-[23px] py-[20px]">
-            <a href="https://x.com/jhowbrcg">
+            <a href="https://www.linkedin.com/in/jhonathan-guarino-61636b173/">
               <FaLinkedinIn className="mx-auto text-[27px]" />
             </a>
           </li>
