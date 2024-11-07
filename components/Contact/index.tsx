@@ -21,7 +21,7 @@ export default function Contact() {
             </a>
           </li>
           <li className="w-full px-[23px] py-[20px]">
-            <a href="https://x.com/jhowbrcg">
+            <a href="https://www.instagram.com/jhowbrcg/">
               <RiInstagramFill className="mx-auto text-[27px]" />
             </a>
           </li>
