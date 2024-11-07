@@ -16,17 +16,20 @@ export default function Contact() {
             </a>
           </li>
           <li className="w-full px-[23px] py-[20px]">
-            <a href="https://www.linkedin.com/in/jhonathan-guarino-61636b173/">
+            <a
+              href="https://www.linkedin.com/in/jhonathan-guarino-61636b173/"
+              target="_blank"
+            >
               <FaLinkedinIn className="mx-auto text-[27px]" />
             </a>
           </li>
           <li className="w-full px-[23px] py-[20px]">
-            <a href="https://www.instagram.com/jhowbrcg/">
+            <a href="https://www.instagram.com/jhowbrcg/" target="_blank">
               <RiInstagramFill className="mx-auto text-[27px]" />
             </a>
           </li>
           <li className="w-full px-[23px] py-[20px]">
-            <a href="https://x.com/jhowbrcg">
+            <a href="https://x.com/jhowbrcg" target="_blank">
               <FaXTwitter className="mx-auto text-[27px]" />
             </a>
           </li>
