@@ -8,7 +8,7 @@ export default function About() {
   useEffect(() => Observer.start(), []);
 
   return (
-    <section className="mx-[22px] mt-[51px] xl:mx-[42px]">
+    <section className="mx-[22px] mt-[51px] xl:mx-[42px] xl:mt-[102px]">
       <SubTitle text="Know me a litte bit" textCenter={false} />
       <div className="mt-[25px] min-h-[624px] w-full border border-line-light bg-about-mobile-light bg-contain bg-bottom bg-no-repeat dark:border-line-dark dark:bg-about-mobile-dark md:bg-[center_bottom_-100px] lg:bg-[center_bottom_-170px] xl:bg-about-desktop-light xl:bg-left dark:xl:bg-about-desktop-dark">
         <div className="grid grid-cols-2 gap-y-5 px-[16px] py-[50px] md:px-[100px] xl:ml-auto xl:mr-[200px] xl:mt-[58px] xl:w-fit xl:grid-cols-3 xl:gap-x-4 xl:gap-y-12 xl:p-0">
