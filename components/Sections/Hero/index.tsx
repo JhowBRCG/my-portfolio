@@ -1,6 +1,6 @@
 "use client";
 
-import SquaresAnimation from "../SquaresAnimation";
+import SquaresAnimation from "@/components/UI/SquaresAnimation";
 import { useMediaQuery } from "react-responsive";
 import { getSquareNumByScreenSize } from "@/lib/utils/getSquareNumByScreenSize";
 import { useIsMounted } from "@/lib/hooks/useIsMounted";

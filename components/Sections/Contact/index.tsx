@@ -1,4 +1,4 @@
-import SubTitle from "../SubTitle";
+import SubTitle from "@/components/UI/SubTitle";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
-import Header from "@/components/Header";
+import Header from "@/components/Layout/Header";
 import "./globals.css";
 
 import { Kranky } from "next/font/google";

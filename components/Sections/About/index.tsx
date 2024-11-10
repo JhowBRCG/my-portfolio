@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import SubTitle from "../SubTitle";
+import SubTitle from "@/components/UI/SubTitle";
 import { Observer } from "tailwindcss-intersect";
 
 export default function About() {

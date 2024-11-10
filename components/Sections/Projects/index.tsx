@@ -1,6 +1,6 @@
-import SubTitle from "../SubTitle";
+import SubTitle from "@/components/UI/SubTitle";
 import { projects } from "@/data/projects";
-import ProjectCard from "../ProjectCard";
+import ProjectCard from "@/components/UI/ProjectCard";
 
 export default function Projects() {
   return (
