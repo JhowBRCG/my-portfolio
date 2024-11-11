@@ -12,7 +12,7 @@ export default function About() {
     <section className="mx-[22px] mt-[51px] xl:mx-[42px] xl:mt-[102px]">
       <SubTitle text="Know me a litte bit" textCenter={false} />
       <SectionDescription>
-        Hi, I&apos;m Jhonathan. I&apos;m currently studying e learning more
+        Hi, I&apos;m Jhonathan. I&apos;m currently studying and learning more
         about programming, with a focus on Front-End development.
       </SectionDescription>
       <div className="mt-[25px] min-h-[624px] w-full border border-line-light bg-about-mobile-light bg-contain bg-bottom bg-no-repeat dark:border-line-dark dark:bg-about-mobile-dark md:bg-[center_bottom_-100px] lg:bg-[center_bottom_-170px] xl:bg-about-desktop-light xl:bg-left dark:xl:bg-about-desktop-dark">
