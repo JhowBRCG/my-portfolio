@@ -15,16 +15,31 @@ export default function Header() {
         <ToggleTheme className="absolute right-28 top-0 md:right-80 2xl:right-96" />
         <ul className="hidden md:flex">
           <li className="relative px-[20px] text-lg 2xl:text-2xl">
-            <a href="">Contact</a>
+            <a
+              href=""
+              className="decoration-black hover:underline dark:decoration-white"
+            >
+              Contact
+            </a>
             <span className="absolute -top-[16px] right-0 h-[60px] w-[1px] bg-line-light dark:bg-line-dark 2xl:h-[67px]" />
             <span className="absolute -top-[16px] left-0 h-[60px] w-[1px] bg-line-light dark:bg-line-dark 2xl:h-[67px]" />
           </li>
           <li className="relative px-[20px] text-lg 2xl:text-2xl">
-            <a href="">GitHub</a>
+            <a
+              href=""
+              className="decoration-black hover:underline dark:decoration-white"
+            >
+              GitHub
+            </a>
             <span className="absolute -top-[16px] right-0 h-[60px] w-[1px] bg-line-light dark:bg-line-dark 2xl:h-[67px]" />
           </li>
           <li className="px-[20px] text-lg 2xl:text-2xl">
-            <a href="">CV</a>
+            <a
+              href=""
+              className="decoration-black hover:underline dark:decoration-white"
+            >
+              CV
+            </a>
           </li>
         </ul>
         <button className="md:hidden" onClick={openMenu}>
