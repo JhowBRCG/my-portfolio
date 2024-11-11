@@ -15,9 +15,7 @@ export default function ToggleTheme({ className }: ToggleThemeProps) {
 
   const changeTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
-    if (isMounted) {
-      playSound();
-    }
+    if (isMounted) playSound();
   };
 
   if (!isMounted) return null;
