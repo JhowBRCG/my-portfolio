@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import SubTitle from "@/components/UI/SubTitle";
 import { Observer } from "tailwindcss-intersect";
+import SectionDescription from "@/components/UI/SectionDescription";
 
 export default function About() {
   useEffect(() => Observer.start(), []);
@@ -10,6 +11,10 @@ export default function About() {
   return (
     <section className="mx-[22px] mt-[51px] xl:mx-[42px] xl:mt-[102px]">
       <SubTitle text="Know me a litte bit" textCenter={false} />
+      <SectionDescription>
+        Hi, I&apos;m Jhonathan. I&apos;m currently studying e learning more
+        about programming, with a focus on Front-End development.
+      </SectionDescription>
       <div className="mt-[25px] min-h-[624px] w-full border border-line-light bg-about-mobile-light bg-contain bg-bottom bg-no-repeat dark:border-line-dark dark:bg-about-mobile-dark md:bg-[center_bottom_-100px] lg:bg-[center_bottom_-170px] xl:bg-about-desktop-light xl:bg-left dark:xl:bg-about-desktop-dark">
         <div className="grid grid-cols-2 gap-y-5 px-[16px] py-[50px] md:px-[100px] xl:ml-auto xl:mr-[200px] xl:mt-[58px] xl:w-fit xl:grid-cols-3 xl:gap-x-4 xl:gap-y-12 xl:p-0">
           <p className="col-span-2 text-center text-[24px] animate-delay-[100ms] intersect:animate-fade-up xl:col-span-3 xl:text-[36px]">
