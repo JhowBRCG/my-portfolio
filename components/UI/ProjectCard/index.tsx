@@ -3,22 +3,14 @@
 import Image from "next/image";
 import ProjectModal from "../ProjectModal";
 import useModal from "@/lib/hooks/useModal";
+import { ProjectProps } from "@/lib/@types/projectProps";
 
 type ProjectCardProps = {
-  img: string;
-  name: string;
-  techs: JSX.Element[];
-  repo: string;
-  demo: string;
+  project: ProjectProps;
 };
 
-export default function ProjectCard({
-  img,
-  name,
-  techs,
-  repo,
-  demo,
-}: ProjectCardProps) {
+export default function ProjectCard({ project }: ProjectCardProps) {
+  const { img, name } = project;
   const { modal, openModal, closeModal } = useModal();
 
   return (
@@ -37,16 +29,7 @@ export default function ProjectCard({
         />
         <p className="mt-[9px] xl:text-[20px]">{name}</p>
       </article>
-      {modal && (
-        <ProjectModal
-          img={img}
-          name={name}
-          techs={techs}
-          repo={repo}
-          demo={demo}
-          closeModal={closeModal}
-        />
-      )}
+      {modal && <ProjectModal project={project} closeModal={closeModal} />}
     </>
   );
 }
