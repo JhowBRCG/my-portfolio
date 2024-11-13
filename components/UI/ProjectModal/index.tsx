@@ -1,31 +1,25 @@
 import { MdOutlineClose } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
+import { ProjectProps } from "@/lib/@types/projectProps";
 
 type ProjectModalProps = {
-  img: string;
-  name: string;
-  techs: JSX.Element[];
-  repo: string;
-  demo: string;
+  project: ProjectProps;
   closeModal: () => void;
 };
 
 export default function ProjectModal({
-  img,
-  name,
-  techs,
-  repo,
-  demo,
+  project,
   closeModal,
 }: ProjectModalProps) {
+  const { img, name, technologies, demo, repo } = project;
   return (
-    <div className="bg-black-opacity fixed inset-0 h-full w-full">
-      <article className="dark:shadow-white-opacity shadow-black-opacity absolute inset-0 m-auto h-fit w-[80%] bg-bg-light p-[20px] shadow-sm dark:bg-bg-dark">
+    <div className="fixed inset-0 h-full w-full bg-black-opacity">
+      <article className="absolute inset-0 m-auto h-fit w-[80%] bg-bg-light p-[20px] shadow-sm shadow-black-opacity dark:bg-bg-dark dark:shadow-white-opacity">
         <Image src={img} width={999} height={999} alt={name} />
         <h3 className="mt-[11px] text-[20px]">{name}</h3>
         <ul className="flex gap-[10px]">
-          {techs.map((tech, i) => (
+          {technologies.map((tech, i) => (
             <li className="mt-[10px] text-[22px]" key={i}>
               {tech}
             </li>
