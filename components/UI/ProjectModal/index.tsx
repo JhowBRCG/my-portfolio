@@ -48,7 +48,7 @@ export default function ProjectModal({
             className="w-full border border-line-light p-[7px] text-center dark:border-line-dark"
             href={repo}
           >
-            RESPOSITORIE
+            RESPOSITORY
           </Link>
         </div>
         <button
