@@ -37,12 +37,14 @@ export default function ProjectModal({
         </p>
         <div className="mb-[50px] mt-[21px] flex justify-between gap-[3px]">
           <Link
+            target="_blank"
             className="w-full border border-line-light p-[7px] text-center dark:border-line-dark"
             href={demo}
           >
             VIEW PAGE
           </Link>
           <Link
+            target="_blank"
             className="w-full border border-line-light p-[7px] text-center dark:border-line-dark"
             href={repo}
           >
