@@ -17,13 +17,13 @@ export default function ProjectModal({
     <div className="fixed inset-0 h-full w-full bg-black-opacity">
       <article className="absolute inset-0 m-auto h-fit w-[80%] bg-bg-light p-[20px] shadow-sm shadow-black-opacity dark:bg-bg-dark dark:shadow-white-opacity">
         <Image
-          className="h-[150px] w-full object-cover object-top"
+          className="h-[150px] w-full object-cover object-top md:h-[200px]"
           src={img}
           width={999}
           height={999}
           alt={name}
         />
-        <h3 className="mt-[11px] text-[20px]">{name}</h3>
+        <h3 className="mt-[11px] text-[24px]">{name}</h3>
         <ul className="flex gap-[10px]">
           {technologies.map((tech, i) => (
             <li className="mt-[10px] text-[22px]" key={i}>
