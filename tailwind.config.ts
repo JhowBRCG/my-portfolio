@@ -13,6 +13,8 @@ const config: Config = {
       colors: {
         white: "#F7F7F7",
         black: "#000000",
+        "black-opacity": "rgba(0,0,0,0.6)",
+        "white-opacity": "rgba(255,255,255,0.6)",
         "bg-dark": "#0C0C0C",
         "bg-light": "#F7F7F7",
         "line-dark": "#535353",
