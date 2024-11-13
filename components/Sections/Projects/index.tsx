@@ -14,14 +14,7 @@ export default function Projects() {
       </SectionDescription>
       <div className="mt-[25px] grid gap-2 md:grid-cols-2 md:gap-0 lg:grid-cols-3">
         {projects.map((project, i) => (
-          <ProjectCard
-            key={i}
-            img={project.img}
-            name={project.name}
-            techs={project.technologies}
-            repo={project.repo}
-            demo={project.demo}
-          />
+          <ProjectCard key={i} project={project} />
         ))}
       </div>
     </section>
