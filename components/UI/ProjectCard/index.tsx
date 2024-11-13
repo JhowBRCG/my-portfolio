@@ -17,7 +17,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     <>
       <article
         onClick={openModal}
-        className="w-full border border-line-light p-[10px] dark:border-line-dark"
+        className="w-full cursor-pointer border border-line-light p-[10px] dark:border-line-dark"
       >
         <Image
           className="h-[200px] w-full object-cover object-top"
