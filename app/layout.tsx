@@ -5,7 +5,7 @@ import "./globals.css";
 
 import { Kranky } from "next/font/google";
 
-export const kranky = Kranky({ subsets: ["latin"], weight: "400" });
+const kranky = Kranky({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "JHONATHAN | PORTIFOLIO",
