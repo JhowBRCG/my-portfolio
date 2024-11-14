@@ -12,7 +12,7 @@ export default function ProjectModal({
   project,
   closeModal,
 }: ProjectModalProps) {
-  const { img, name, technologies, demo, repo } = project;
+  const { img, name, technologies, demo, repo, description } = project;
   return (
     <div className="fixed inset-0 h-full w-full bg-black-opacity">
       <article className="absolute inset-0 m-auto flex h-fit w-[80%] flex-col gap-[11px] bg-bg-light p-[20px] shadow-sm shadow-black-opacity dark:bg-bg-dark dark:shadow-white-opacity lg:flex-row xl:w-[840px]">
@@ -32,11 +32,7 @@ export default function ProjectModal({
               </li>
             ))}
           </ul>
-          <p className="mt-[10px] text-justify xl:mt-[20px]">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum,
-            laudantium hic! Vero facere id, inventore nulla quasi magni nemo
-            minus
-          </p>
+          <p className="mt-[10px] text-justify xl:mt-[20px]">{description}</p>
           <div className="mb-[50px] mt-[21px] flex justify-between gap-[3px] lg:mb-0 lg:mt-auto lg:justify-start">
             <Link
               target="_blank"
