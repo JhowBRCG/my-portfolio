@@ -15,7 +15,7 @@ export default function ProjectModal({
   const { img, name, technologies, demo, repo } = project;
   return (
     <div className="fixed inset-0 h-full w-full bg-black-opacity">
-      <article className="absolute inset-0 m-auto flex h-fit w-[80%] flex-col gap-[11px] bg-bg-light p-[20px] shadow-sm shadow-black-opacity dark:bg-bg-dark dark:shadow-white-opacity lg:flex-row xl:w-[60%]">
+      <article className="absolute inset-0 m-auto flex h-fit w-[80%] flex-col gap-[11px] bg-bg-light p-[20px] shadow-sm shadow-black-opacity dark:bg-bg-dark dark:shadow-white-opacity lg:flex-row xl:w-[840px]">
         <Image
           className="h-[150px] w-full object-cover object-top md:h-[200px] lg:h-[300px] lg:w-[50%] xl:h-[400px]"
           src={img}
@@ -40,14 +40,14 @@ export default function ProjectModal({
           <div className="mb-[50px] mt-[21px] flex justify-between gap-[3px] lg:mb-0 lg:mt-auto lg:justify-start">
             <Link
               target="_blank"
-              className="w-full border border-line-light p-[7px] text-center dark:border-line-dark lg:w-[150px] xl:w-[200px]"
+              className="w-full border border-line-light p-[7px] text-center dark:border-line-dark"
               href={demo}
             >
               VIEW PAGE
             </Link>
             <Link
               target="_blank"
-              className="w-full border border-line-light p-[7px] text-center dark:border-line-dark lg:w-[150px] xl:w-[200px]"
+              className="w-full border border-line-light p-[7px] text-center dark:border-line-dark"
               href={repo}
             >
               RESPOSITORY
