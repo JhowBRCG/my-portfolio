@@ -40,14 +40,14 @@ export default function ProjectModal({
           <div className="mb-[50px] mt-[21px] flex justify-between gap-[3px] lg:mb-0 lg:mt-auto lg:justify-start">
             <Link
               target="_blank"
-              className="w-full border border-line-light p-[7px] text-center dark:border-line-dark"
+              className="w-full border border-line-light p-[7px] text-center dark:border-line-dark lg:w-[150px]"
               href={demo}
             >
               VIEW PAGE
             </Link>
             <Link
               target="_blank"
-              className="w-full border border-line-light p-[7px] text-center dark:border-line-dark"
+              className="w-full border border-line-light p-[7px] text-center dark:border-line-dark lg:w-[150px]"
               href={repo}
             >
               RESPOSITORY
