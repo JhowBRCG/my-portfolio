@@ -11,7 +11,7 @@ type ToggleThemeProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
 export default function ToggleTheme({ className }: ToggleThemeProps) {
   const isMounted = useIsMounted();
   const { theme, setTheme } = useTheme();
-  const playSound = useSoundEffect("Audios/toggle-theme.mp3");
+  const playSound = useSoundEffect("/audios/toggle-theme.mp3");
 
   const changeTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
