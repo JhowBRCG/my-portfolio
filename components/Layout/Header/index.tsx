@@ -16,7 +16,7 @@ export default function Header() {
         <ul className="hidden md:flex">
           <li className="relative px-[20px] text-lg 2xl:text-2xl">
             <a
-              href=""
+              href="mailto:guarino90@gmail.com"
               className="decoration-black hover:underline dark:decoration-white"
             >
               Contact
@@ -26,7 +26,8 @@ export default function Header() {
           </li>
           <li className="relative px-[20px] text-lg 2xl:text-2xl">
             <a
-              href=""
+              href="https://github.com/JhowBRCG"
+              target="_blank"
               className="decoration-black hover:underline dark:decoration-white"
             >
               GitHub
