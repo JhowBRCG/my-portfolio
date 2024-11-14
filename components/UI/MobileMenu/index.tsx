@@ -20,10 +20,12 @@ export default function MobileMenu({ closeMenu, menu }: MobileMenuProps) {
       </div>
       <ul className="mt-28 flex flex-col items-center">
         <li className="w-full border-b border-t border-line-light py-[14px] text-center text-[24px] dark:border-line-dark">
-          <a href="">Contact</a>
+          <a href="mailto:guarino90@gmail.com">Contact</a>
         </li>
         <li className="w-full border-b border-line-light py-[14px] text-center text-[24px] dark:border-line-dark">
-          <a href="">GitHub</a>
+          <a href="https://github.com/JhowBRCG" target="_blank">
+            GitHub
+          </a>
         </li>
         <li className="w-full border-b border-line-light py-[14px] text-center text-[24px] dark:border-line-dark">
           <a href="">CV</a>
