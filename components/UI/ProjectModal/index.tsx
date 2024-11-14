@@ -15,7 +15,7 @@ export default function ProjectModal({
   const { img, name, technologies, demo, repo } = project;
   return (
     <div className="fixed inset-0 h-full w-full bg-black-opacity">
-      <article className="absolute inset-0 m-auto flex h-fit w-[80%] flex-col gap-[11px] bg-bg-light p-[20px] shadow-sm shadow-black-opacity dark:bg-bg-dark dark:shadow-white-opacity lg:flex-row">
+      <article className="absolute inset-0 m-auto flex h-fit w-[80%] flex-col gap-[11px] bg-bg-light p-[20px] shadow-sm shadow-black-opacity dark:bg-bg-dark dark:shadow-white-opacity lg:flex-row xl:w-[60%]">
         <Image
           className="h-[150px] w-full object-cover object-top md:h-[200px] lg:h-[300px] lg:w-[50%] xl:h-[400px]"
           src={img}
