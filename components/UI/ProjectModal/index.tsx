@@ -32,7 +32,9 @@ export default function ProjectModal({
               </li>
             ))}
           </ul>
-          <p className="mt-[10px] text-justify xl:mt-[20px]">{description}</p>
+          <p className="mt-[10px] text-justify xl:mt-[20px] xl:text-[20px]">
+            {description}
+          </p>
           <div className="mb-[50px] mt-[21px] flex justify-between gap-[3px] lg:mb-0 lg:mt-auto lg:justify-start">
             <Link
               target="_blank"
