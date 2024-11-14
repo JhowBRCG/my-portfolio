@@ -4,4 +4,5 @@ export type ProjectProps = {
   technologies: JSX.Element[];
   demo: string;
   repo: string;
+  description: string;
 };
