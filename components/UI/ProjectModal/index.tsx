@@ -55,7 +55,7 @@ export default function ProjectModal({
           </div>
           <button
             onClick={closeModal}
-            className="absolute bottom-0 right-0 border-l border-t border-line-light p-[10px] text-[20px] dark:border-line-dark"
+            className="absolute bottom-0 right-0 border-l border-t border-line-light p-[10px] text-[20px] hover:bg-line-light dark:border-line-dark dark:hover:bg-line-dark"
           >
             <MdOutlineClose />
           </button>
