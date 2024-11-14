@@ -12,6 +12,8 @@ export const projects = [
     ],
     demo: "https://countries-information-eight.vercel.app/",
     repo: "https://github.com/JhowBRCG/countries-information",
+    description:
+      "View and filter information about all countries in the world.",
   },
   {
     name: "Poke Info",
@@ -23,6 +25,8 @@ export const projects = [
     ],
     demo: "https://pokeinfo-react.netlify.app/",
     repo: "https://github.com/JhowBRCG/Poke-Info",
+    description:
+      "The famous Pokédex project. In this project, you can view and filter all Pokémon, thanks to the PokéAPI.",
   },
   {
     name: "Rock, paper and scissors",
@@ -35,6 +39,8 @@ export const projects = [
     ],
     demo: "https://rock-paper-scissors-game-sandy-seven.vercel.app/",
     repo: "https://github.com/JhowBRCG/Rock-Paper-Scissors-game",
+    description:
+      "The classic game of Jokenpo, also known as Rock, Paper, Scissors. Who hasn't played it? in this project, you can play it against the computer.",
   },
   {
     name: "GitHub Profile Search",
@@ -46,6 +52,8 @@ export const projects = [
     ],
     demo: "https://jhowbrcg.github.io/git-hub-api-search/",
     repo: "https://github.com/JhowBRCG/git-hub-api-search",
+    description:
+      "Thanks to the GitHub API, this project allows you to search for any GitHub user and view their profile information.",
   },
   {
     name: "ToDo List",
@@ -57,6 +65,8 @@ export const projects = [
     ],
     demo: "https://todo-list-frontendmentor.netlify.app/",
     repo: "https://github.com/JhowBRCG/todo-app",
+    description:
+      "A to-do list where users can add tasks, remove them, mark them as complete, filter, and reorder the list.",
   },
   {
     name: "Job List",
@@ -69,5 +79,7 @@ export const projects = [
     ],
     demo: "https://job-list-filtering.vercel.app/",
     repo: "https://github.com/JhowBRCG/job-list-filtering",
+    description:
+      "In this project, users can filter front-end jobs based on the programming language, technology and job level.",
   },
 ];
