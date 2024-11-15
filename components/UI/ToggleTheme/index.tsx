@@ -22,6 +22,9 @@ export default function ToggleTheme({ className }: ToggleThemeProps) {
 
   return (
     <button className={cn(className)} onClick={changeTheme}>
+      <span className="absolute bottom-0 block h-[1px] w-[10px] translate-y-[8px] rotate-[105deg] bg-black" />
+      <span className="absolute bottom-0 block h-[1px] w-[10px] translate-x-[10px] translate-y-[8px] rotate-[90deg] bg-black" />
+      <span className="absolute bottom-0 right-0 block h-[1px] w-[10px] translate-y-[8px] rotate-[75deg] bg-black" />
       <Image
         src={`/images/switch-${theme === "light" ? "dark" : "light"}.svg`}
         width={"30"}
