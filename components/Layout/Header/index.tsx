@@ -36,7 +36,8 @@ export default function Header() {
           </li>
           <li className="px-[20px] text-lg 2xl:text-2xl">
             <a
-              href=""
+              href="pdfs/portuguese-cv.pdf"
+              target="_blank"
               className="decoration-black hover:underline dark:decoration-white"
             >
               CV
