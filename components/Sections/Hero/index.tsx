@@ -6,14 +6,12 @@ import { getSquareNumByScreenSize } from "@/lib/utils/getSquareNumByScreenSize";
 import { useIsMounted } from "@/lib/hooks/useIsMounted";
 
 export default function Hero() {
+  const isMounted = useIsMounted();
+
   const isDesktop = useMediaQuery({ query: "(min-width: 1280px)" });
   const isLaptop = useMediaQuery({ query: "(min-width: 1024px)" });
   const isTablet = useMediaQuery({ query: "(min-width: 768px)" });
   const isMobileL = useMediaQuery({ query: "(min-width: 425px)" });
-
-  const isMounted = useIsMounted();
-
-  if (!isMounted) return null;
 
   const numSquares = getSquareNumByScreenSize(
     isDesktop,
@@ -21,6 +19,8 @@ export default function Hero() {
     isTablet,
     isMobileL,
   );
+
+  if (!isMounted) return null;
 
   return (
     <section className="relative flex min-h-[calc(100svh-62px)] flex-col items-center justify-between px-[13px] py-[29px] lg:px-[25px]">
