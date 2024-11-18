@@ -28,7 +28,9 @@ export default function MobileMenu({ closeMenu, menu }: MobileMenuProps) {
           </a>
         </li>
         <li className="w-full border-b border-line-light py-[14px] text-center text-[24px] dark:border-line-dark">
-          <a href="">CV</a>
+          <a href="pdfs/portuguese-cv.pdf" target="_blank">
+            CV
+          </a>
         </li>
       </ul>
     </div>
