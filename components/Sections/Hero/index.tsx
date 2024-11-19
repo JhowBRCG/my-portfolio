@@ -48,7 +48,7 @@ export default function Hero() {
           </p>
         </div>
         <a
-          href="#"
+          href="#contact"
           className="mt-[73px] animate-jump-in border-[0.5px] border-black px-[29px] py-[11px] text-[14px] animate-delay-1000 dark:border-white md:text-[18px] xl:text-[20px]"
         >
           CONTACT-ME
