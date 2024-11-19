@@ -6,7 +6,10 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export default function Contact() {
   return (
-    <section className="mx-[22px] mt-[135px] xl:mx-[42px] xl:mt-[270px]">
+    <section
+      id="contact"
+      className="mx-[22px] mt-[135px] xl:mx-[42px] xl:mt-[270px]"
+    >
       <SubTitle text="Contact with me" textCenter={true} />
       <div className="mx-[-22px] mt-[46px] border-y border-line-light dark:border-line-dark xl:mx-[-42px]">
         <ul className="flex items-center justify-between divide-x-2 divide-line-light dark:divide-line-dark">
