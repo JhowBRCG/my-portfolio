@@ -15,9 +15,9 @@ export default function Contact() {
       <div className="mx-[-22px] mt-[46px] border-y border-line-light dark:border-line-dark xl:mx-[-42px]">
         <ul className="flex items-center justify-between divide-x-2 divide-line-light dark:divide-line-dark">
           <li className="w-full px-[23px] py-[20px]">
-            <Link href="mailto:guarino90@gmail.com">
+            <a href="mailto:guarino90@gmail.com">
               <MdEmail className="mx-auto text-[27px]" />
-            </Link>
+            </a>
           </li>
           <li className="w-full px-[23px] py-[20px]">
             <Link
