@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils/cn";
 import { FaRegWindowClose } from "react-icons/fa";
+import Link from "next/link";
 
 type MobileMenuProps = {
   closeMenu: () => void;
@@ -23,14 +24,14 @@ export default function MobileMenu({ closeMenu, menu }: MobileMenuProps) {
           <a href="mailto:guarino90@gmail.com">Contact</a>
         </li>
         <li className="w-full border-b border-line-light py-[14px] text-center text-[24px] dark:border-line-dark">
-          <a href="https://github.com/JhowBRCG" target="_blank">
+          <Link href="https://github.com/JhowBRCG" target="_blank">
             GitHub
-          </a>
+          </Link>
         </li>
         <li className="w-full border-b border-line-light py-[14px] text-center text-[24px] dark:border-line-dark">
-          <a href="pdfs/portuguese-cv.pdf" target="_blank">
+          <Link href="pdfs/portuguese-cv.pdf" target="_blank">
             CV
-          </a>
+          </Link>
         </li>
       </ul>
     </div>
