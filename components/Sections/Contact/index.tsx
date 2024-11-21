@@ -3,6 +3,7 @@ import { MdEmail } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaXTwitter } from "react-icons/fa6";
+import Link from "next/link";
 
 export default function Contact() {
   return (
@@ -14,27 +15,27 @@ export default function Contact() {
       <div className="mx-[-22px] mt-[46px] border-y border-line-light dark:border-line-dark xl:mx-[-42px]">
         <ul className="flex items-center justify-between divide-x-2 divide-line-light dark:divide-line-dark">
           <li className="w-full px-[23px] py-[20px]">
-            <a href="mailto:guarino90@gmail.com">
+            <Link href="mailto:guarino90@gmail.com">
               <MdEmail className="mx-auto text-[27px]" />
-            </a>
+            </Link>
           </li>
           <li className="w-full px-[23px] py-[20px]">
-            <a
+            <Link
               href="https://www.linkedin.com/in/jhonathan-guarino-61636b173/"
               target="_blank"
             >
               <FaLinkedinIn className="mx-auto text-[27px]" />
-            </a>
+            </Link>
           </li>
           <li className="w-full px-[23px] py-[20px]">
-            <a href="https://www.instagram.com/jhowbrcg/" target="_blank">
+            <Link href="https://www.instagram.com/jhowbrcg/" target="_blank">
               <RiInstagramFill className="mx-auto text-[27px]" />
-            </a>
+            </Link>
           </li>
           <li className="w-full px-[23px] py-[20px]">
-            <a href="https://x.com/jhowbrcg" target="_blank">
+            <Link href="https://x.com/jhowbrcg" target="_blank">
               <FaXTwitter className="mx-auto text-[27px]" />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
