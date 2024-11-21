@@ -4,6 +4,7 @@ import ToggleTheme from "@/components/UI/ToggleTheme";
 import MobileMenu from "@/components/UI/MobileMenu";
 import { CiMenuFries } from "react-icons/ci";
 import { useMenu } from "@/lib/hooks/useMenu";
+import Link from "next/link";
 
 export default function Header() {
   const { menu, closeMenu, openMenu } = useMenu();
@@ -25,23 +26,23 @@ export default function Header() {
             <span className="absolute -top-[16px] left-0 h-[60px] w-[1px] bg-line-light dark:bg-line-dark 2xl:h-[67px]" />
           </li>
           <li className="relative px-[20px] text-lg 2xl:text-2xl">
-            <a
+            <Link
               href="https://github.com/JhowBRCG"
               target="_blank"
               className="decoration-black hover:underline dark:decoration-white"
             >
               GitHub
-            </a>
+            </Link>
             <span className="absolute -top-[16px] right-0 h-[60px] w-[1px] bg-line-light dark:bg-line-dark 2xl:h-[67px]" />
           </li>
           <li className="px-[20px] text-lg 2xl:text-2xl">
-            <a
+            <Link
               href="pdfs/portuguese-cv.pdf"
               target="_blank"
               className="decoration-black hover:underline dark:decoration-white"
             >
               CV
-            </a>
+            </Link>
           </li>
         </ul>
         <button className="md:hidden" onClick={openMenu}>
