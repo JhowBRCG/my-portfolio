@@ -1,17 +1,13 @@
 "use client";
 
 import SquaresAnimation from "@/components/UI/SquaresAnimation";
-import { useMediaQuery } from "react-responsive";
 import { getSquareNumByScreenSize } from "@/lib/utils/getSquareNumByScreenSize";
 import { useIsMounted } from "@/lib/hooks/useIsMounted";
+import { useResponsiveQueries } from "@/lib/hooks/useResponsiveQueries";
 
 export default function Hero() {
   const isMounted = useIsMounted();
-
-  const isDesktop = useMediaQuery({ query: "(min-width: 1280px)" });
-  const isLaptop = useMediaQuery({ query: "(min-width: 1024px)" });
-  const isTablet = useMediaQuery({ query: "(min-width: 768px)" });
-  const isMobileL = useMediaQuery({ query: "(min-width: 425px)" });
+  const { isDesktop, isLaptop, isMobileL, isTablet } = useResponsiveQueries();
 
   const numSquares = getSquareNumByScreenSize(
     isDesktop,
