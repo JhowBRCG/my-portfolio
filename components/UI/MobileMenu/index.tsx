@@ -15,7 +15,11 @@ export default function MobileMenu({ closeMenu, menu }: MobileMenuProps) {
   return (
     <div className={cn(menuClass, menuTransition)}>
       <div className="min-h-[calc(63px-16px)] border-b border-line-light dark:border-line-dark">
-        <button onClick={closeMenu} className="ml-auto mr-[10px] block">
+        <button
+          onClick={closeMenu}
+          aria-label="close menu"
+          className="ml-auto mr-[10px] block"
+        >
           <FaRegWindowClose className="text-3xl" />
         </button>
       </div>
