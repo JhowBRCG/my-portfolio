@@ -20,16 +20,16 @@ export default function Hero() {
     isMobileL,
   );
 
-  if (!isMounted) return null;
+  const squareAnimation = isMounted ? (
+    <SquaresAnimation
+      className="h-[24px] w-[26px] animate-fade-down lg:h-[46px] lg:w-[50px]"
+      squares={numSquares}
+    />
+  ) : null;
 
   return (
     <section className="relative flex min-h-[calc(100svh-62px)] flex-col items-center justify-between px-[13px] py-[29px] lg:px-[25px]">
-      <div className="w-full">
-        <SquaresAnimation
-          className="h-[24px] w-[26px] animate-fade-down lg:h-[46px] lg:w-[50px]"
-          squares={numSquares}
-        />
-      </div>
+      <div className="w-full">{squareAnimation}</div>
       <div className="flex flex-col items-center justify-center text-center">
         <div className="flex flex-col gap-[8px]">
           <h1 className="animate-fade-left text-[20px] delay-100 md:text-2xl xl:text-[32px]">
@@ -54,12 +54,7 @@ export default function Hero() {
           CONTACT-ME
         </a>
       </div>
-      <div className="w-full">
-        <SquaresAnimation
-          className="h-[24px] w-[26px] animate-fade-down lg:h-[46px] lg:w-[50px]"
-          squares={numSquares}
-        />
-      </div>
+      <div className="w-full">{squareAnimation}</div>
     </section>
   );
 }
