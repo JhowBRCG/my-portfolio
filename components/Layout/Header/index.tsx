@@ -45,7 +45,7 @@ export default function Header() {
             </Link>
           </li>
         </ul>
-        <button className="md:hidden" onClick={openMenu}>
+        <button className="md:hidden" aria-label="open menu" onClick={openMenu}>
           <CiMenuFries className="text-3xl" />
         </button>
         <MobileMenu closeMenu={closeMenu} menu={menu} />
