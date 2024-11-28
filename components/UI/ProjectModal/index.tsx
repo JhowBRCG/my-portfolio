@@ -22,6 +22,7 @@ export default function ProjectModal({
           width={999}
           height={999}
           alt={name}
+          priority
         />
         <div className="flex-col lg:flex">
           <h3 className="text-[20px] md:text-[24px] xl:text-[28px]">{name}</h3>
