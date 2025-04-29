@@ -41,4 +41,19 @@ export const skillIcons = [
     name: "Next.js",
     icon: <Icon icon="akar-icons:nextjs-fill" />,
   },
+
+  {
+    name: "Redux",
+    icon: <Icon icon="akar-icons:redux-fill" />,
+  },
+
+  {
+    name: "Jest",
+    icon: <Icon icon="devicon-plain:jest" />,
+  },
+
+  {
+    name: "ReactQuery",
+    icon: <Icon icon="simple-icons:reactquery" />,
+  },
 ];
